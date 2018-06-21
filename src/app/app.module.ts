@@ -23,6 +23,10 @@ import { ProfileComponent } from './profile/profile.component';
 import {UserServiceClient} from "./services/user.service.client";
 import { SectionListComponent } from './section-list/section-list.component';
 import {SectionServiceClient} from "./services/section.service.client";
+import { QuizListComponent } from './quiz-list/quiz-list.component';
+import {QuizServiceClient} from "./services/quiz.service.client";
+import { QuizTakerComponent } from './quiz-taker/quiz-taker.component';
+import { QuizSubmissionsComponent } from './quiz-submissions/quiz-submissions.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,10 @@ import {SectionServiceClient} from "./services/section.service.client";
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    SectionListComponent
+    SectionListComponent,
+    QuizListComponent,
+    QuizTakerComponent,
+    QuizSubmissionsComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,8 @@ import {SectionServiceClient} from "./services/section.service.client";
     LessonServiceClient,
     WidgetServiceClient,
     UserServiceClient,
-    SectionServiceClient
+    SectionServiceClient,
+    QuizServiceClient
   ],
   bootstrap: [AppComponent]
 })
